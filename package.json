@@ -1,0 +1,24 @@
+{
+  "name": "formation-nodejs",
+  "version": "1.0.0",
+  "description": "Créer son repository github créer un nouveau repository formation-nodejs.",
+  "main": "index.js",
+  "scripts": {
+    "init:typescript": "tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Razafiarisoa/formation-nodejs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Razafiarisoa/formation-nodejs/issues"
+  },
+  "homepage": "https://github.com/Razafiarisoa/formation-nodejs#readme",
+  "devDependencies": {
+    "@types/node": "^18.14.2",
+    "typescript": "^4.9.5"
+  }
+}
