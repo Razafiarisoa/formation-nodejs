@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "compiler:watch": "npx tsc --watch",
-    "nodemon:watch": "npx nodemon dist/index.js"
+    "nodemon:watch": "npx nodemon dist/index.js",
+    "start:app":"npx concurrently npm:compilerwatch:typescript npm:compilernodemon:typescript"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   "homepage": "https://github.com/Razafiarisoa/formation-nodejs#readme",
   "devDependencies": {
     "@types/node": "^18.14.2",
+    "concurrently": "^7.6.0",
     "nodemon": "^2.0.20",
     "typescript": "^4.9.5"
   }
