@@ -1,7 +1,7 @@
 console.log("Coucou les amis");
 console.log("Bienvenu");
 console.log("test");
-console.log("process.env.NODE_ENV");
-console.log("process.env.TZ");
-console.log("process.env.HOST");
-console.log("process.env.PORT");
+console.log(process.env.NODE_ENV);
+console.log(process.env.TZ);
+console.log(process.env.HOST);
+console.log(process.env.PORT);
