@@ -6,7 +6,7 @@
   "scripts": {
     "compiler:watch": "npx tsc --watch",
     "nodemon:watch": "npx nodemon dist/index.js",
-    "start:app":"npx concurrently npm:compilerwatch:typescript npm:compilernodemon:typescript"
+    "start":"npx concurrently npm:compiler:watch npm:nodemon:watch"
   },
   "repository": {
     "type": "git",
