@@ -1,4 +1,6 @@
 import fastify from 'fastify'
+import fastifyPlugin from 'fastify-plugin'
+import calculatriceRoutes from './routes/calculatrice'
 
 // Création d'une application fastify
 const app = fastify()
@@ -7,6 +9,11 @@ app.listen({ port: 4646, host: '127.0.0.1' }, () =>{
   // Affiche un message dans la console nous indiquant que le serveur est démarré
     console.log("Mon serveur est prêt : http://127.0.0.1:4646")
 })
+
+
+// Enregistremet de mon premier plugin
+app.register(fastifyPlugin(calculatriceRoutes))
+
 
 /*Ajouter 2 routes :
 GET /: Qui retourne la chaine de caractère Bienvenue sur mon serveur
@@ -32,4 +39,4 @@ app.get('/hello', () => {
       {id: "3", nom: "john", prenom: "jane", age: "40",},
       {id: "4", nom: "john", prenom: "jean", age: "38",},
     ];
-  });
+  });  
